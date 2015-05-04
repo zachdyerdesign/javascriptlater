@@ -5,18 +5,22 @@
 		
 		<title>JavaScriplater | JavaScript Templating Engine</title>
 		
-		<link rel="stylesheet" type="text/css" href="style.css">
 		
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
-		<script type="text/javascript" language="javascript" src="libraries/javascriplater.js"></script>
-		<script type="text/javascript" language="javascript" src="data/data.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		
+	
 		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		
+		<script type="text/javascript" language="javascript" src="libraries/javascriplater.js"></script>
+		<script type="text/javascript" language="javascript" src="data/data.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
 	
 	</head>
 	
@@ -29,18 +33,51 @@
 			<nav class="navbar">
 				<script> JavaScriptlater.getMenu("main-menu"); </script>
 			</nav>
+		
+		</div>
+		
+		<div class="js-header">
+			<div class="container">
+				
+				<h2>Overview</h2>
+				<p>JavaScriplater is a website templating engine designed to run on free web hosts so you can easily manage your website with free web hosting such as Github Pages and Google Drive.</p>
+				
+			</div>
+		</div>
+		
+		<div class="container">
 			
-			<h2>Overview</h2>
-			<p>JavaScriplater is a website templating engine designed to run on free web hosts so you can easily manage your website with free web hosting such as Github Pages and Google Drive.</p>
+			<div class="col-md-6">
 			
-			<footer>
+				<h3>Instructions</h3>
+				<ol>
+					<li>Download the files from <a href="https://github.com/zachdyerdesign/javascriptlater" target="_blank">https://github.com/zachdyerdesign/javascriptlater</a></li>
+					<li>Go to <code>data/data.js</code> to update general, menu, and footer information.</li>
+					<li>Use the JavaScriptlater functions inside of <code>script</code> tags anywhere in your html to add dynamic menus and more.</li>
+				</ol>
+			
+			</div>
+			
+			<div class="col-md-6">
+			
+				<h3>Templating Functions</h3>
+				<ol>
+					<li><code>JavaScriptlater.getMenu(name)</code> - Use this to get use your dynamic menu stored in <code>JavaScriptlater.data.menus</code></li>
+					<li><code>JavaScriptlater.getFooter()</code> - Use this to display your footer information stored in <code>JavaScriptlater.data.footer</code></li>
+					<li><code>JavaScriptlater.getIcon(icon, size)</code> - Use this to display an icon from font awesome. Find more icons at <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">http://fortawesome.github.io/Font-Awesome/icons/</a></li>
+				</ol>
+			</div>
+			
+			</div>
+			
+			
+			
+			<footer class="container">
 				<nav class="navbar">
 					<script> JavaScriptlater.getMenu("footer-menu"); </script>
 				</nav>
 				<script> JavaScriptlater.getFooter(); </script>
 			</footer>
-			
-		</div>
 		
 	</body>
 
