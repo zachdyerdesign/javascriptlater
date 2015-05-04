@@ -32,3 +32,9 @@ JavaScriptlater.getFooter = function() {
 	html = "<p>&copy;" + year + " "+general.brand+" | Designed by <a href='http://" + footer.website + "' target='_blank'>" + footer.author + "</p>";
 	document.write(html);
 }
+
+JavaScriptlater.getIcon = function(icon, size) {
+	var
+	html = "<i class='fa fa-"+ icon +" " + size + "'></i>";
+	document.write(html);
+};
