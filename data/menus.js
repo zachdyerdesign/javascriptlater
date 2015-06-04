@@ -1,12 +1,3 @@
-//Data
-JavaScriptlater.data = {};
-
-//General
-JavaScriptlater.data.general = {
-	"brand" : "JavaScriptlater",
-	"baseurl" : "http://zachdyerdesign.github.io/javascriptlater"
-}
-
 //Menus
 JavaScriptlater.data.menus = [
 	{
@@ -23,9 +14,3 @@ JavaScriptlater.data.menus = [
 		]
 	}
 ]
-
-//Footer
-JavaScriptlater.data.footer = {
-	"author" : "Zach Dyer Design",
-	"website" : "zachdyerdesign.com"
-}

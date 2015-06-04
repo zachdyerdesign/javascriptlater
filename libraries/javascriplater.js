@@ -1,11 +1,24 @@
 var JavaScriptlater = {};
 
+// imports gets all the data and packages for JavaScriptlater from the config.js file
+JavaScriptlater.imports = function() {
+	var imports = JavaScriptlater.data.config.import;
+	var html = "";
+	for(var i = 0; i < imports.length; i++) {
+		var imp = imports[i];
+		html += "<script type='text/javascript' language='javascript' src='" + imp + "'></script>";
+	}
+	document.write(html);
+};
+
+
+// getMenu the menu data from data/menus.js and generates a bootstrap menu
 JavaScriptlater.getMenu = function(id) {
 	var
 	menu,
 	html = "",
 	menus = JavaScriptlater.data.menus,
-	config = JavaScriptlater.data.general;
+	config = JavaScriptlater.data.config;
 
 	for(var i = 0; i < menus.length; i++) {
 		if(menus[i].id === id) {
@@ -25,10 +38,11 @@ JavaScriptlater.getMenu = function(id) {
 	document.write(html);
 }
 
+// getFooter gets the footer data from data/footer.js and writes the content
 JavaScriptlater.getFooter = function() {
 	var
 	footer = JavaScriptlater.data.footer,
-	general = JavaScriptlater.data.general,
+	general = JavaScriptlater.data.config,
 	year = new Date().getFullYear(),
 	html = "<p>&copy;" + year + " "+general.brand+" | Designed by <a href='http://" + footer.website + "' target='_blank'>" + footer.author + "</p>";
 	document.write(html);
