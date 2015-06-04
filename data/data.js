@@ -3,7 +3,8 @@ JavaScriptlater.data = {};
 
 //General
 JavaScriptlater.data.general = {
-	"brand" : "JavaScriptlater"
+	"brand" : "JavaScriptlater",
+	"baseurl" : "http://zachdyerdesign.github.io/javascriptlater"
 }
 
 //Menus
