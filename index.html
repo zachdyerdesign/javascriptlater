@@ -3,13 +3,9 @@
 
 	<head>
 
-		<title>JavaScriplater | JavaScript Templating Engine</title>
-
-
+		<title>Scriptlater | JavaScript Templating Engine</title>
 
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -17,9 +13,8 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-		<script type="text/javascript" language="javascript" src="libraries/javascriplater.js"></script>
-		<script type="text/javascript" language="javascript" src="config.js"></script>
-		<script> JavaScriptlater.imports() </script>
+		<script type="text/javascript" language="javascript" src="scriptlater/scriptlater.js"></script>
+		<script> scriptlater.core.import(["icon", "menu", "include"]) </script>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -29,10 +24,10 @@
 
 		<div class="container">
 
-			<h1><script> JavaScriptlater.getIcon("wrench"); </script> JavaScriplater</h1>
+			<h1><script> scriptlater.icon.get("wrench"); </script> JavaScriplater</h1>
 
 			<nav class="navbar">
-				<script> JavaScriptlater.getMenu("main-menu"); </script>
+				<script> scriptlater.menu.get("main-menu"); </script>
 			</nav>
 
 		</div>
@@ -52,9 +47,9 @@
 
 				<h3>Instructions</h3>
 				<ol>
-					<li>Download the files from <a href="https://github.com/zachdyerdesign/javascriptlater" target="_blank">https://github.com/zachdyerdesign/javascriptlater</a></li>
+					<li>Download the files from <a href="https://github.com/zachdyerdesign/scriptlater" target="_blank">https://github.com/zachdyerdesign/scriptlater</a></li>
 					<li>Go to <code>data/data.js</code> to update general, menu, and footer information.</li>
-					<li>Use the JavaScriptlater functions inside of <code>script</code> tags anywhere in your html to add dynamic menus and more.</li>
+					<li>Use the scriptlater functions inside of <code>script</code> tags anywhere in your html to add dynamic menus and more.</li>
 				</ol>
 
 			</div>
@@ -63,9 +58,9 @@
 
 				<h3>Templating Functions</h3>
 				<ol>
-					<li><code>JavaScriptlater.getMenu(name)</code> - Use this to get use your dynamic menu stored in <code>JavaScriptlater.data.menus</code></li>
-					<li><code>JavaScriptlater.getFooter()</code> - Use this to display your footer information stored in <code>JavaScriptlater.data.footer</code></li>
-					<li><code>JavaScriptlater.getIcon(icon, size)</code> - Use this to display an icon from font awesome. Find more icons at <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">http://fortawesome.github.io/Font-Awesome/icons/</a></li>
+					<li><code>scriptlater.getMenu(name)</code> - Use this to get use your dynamic menu stored in <code>scriptlater.data.menus</code></li>
+					<li><code>scriptlater.getFooter()</code> - Use this to display your footer information stored in <code>scriptlater.data.footer</code></li>
+					<li><code>scriptlater.getIcon(icon, size)</code> - Use this to display an icon from font awesome. Find more icons at <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">http://fortawesome.github.io/Font-Awesome/icons/</a></li>
 				</ol>
 			</div>
 
@@ -73,9 +68,9 @@
 
 			<footer class="container">
 				<nav class="navbar">
-					<script> JavaScriptlater.getMenu("footer-menu"); </script>
+					<script> scriptlater.menu.get("footer-menu") </script>
 				</nav>
-				<script> JavaScriptlater.getFooter(); </script>
+				<script> scriptlater.include.get("footer") </script>
 			</footer>
 
 	</body>
