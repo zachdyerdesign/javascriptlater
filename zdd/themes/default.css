@@ -1,0 +1,17 @@
+html {
+  background-image: url("../../images/atbedside.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.js-header h2{
+  font-size: 36px;
+}
+.js-header p {
+  font-size: 21px;
+}

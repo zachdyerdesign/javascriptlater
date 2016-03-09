@@ -3,7 +3,7 @@
 
 	<head>
 
-		<title>Scriptlater | JavaScript Templating Engine</title>
+		<title>zdd | JavaScript Templating Engine</title>
 
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -13,8 +13,8 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-		<script type="text/javascript" language="javascript" src="scriptlater/scriptlater.js"></script>
-		<script> scriptlater.core.import(["icon", "menu", "include"]) </script>
+		<script type="text/javascript" language="javascript" src="zdd/zdd.js"></script>
+		<script> zdd.core.import(["icon", "menu", "include"]) </script>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -24,10 +24,10 @@
 
 		<div class="container">
 
-			<h1><script> scriptlater.icon.get("wrench"); </script> JavaScriplater</h1>
+			<h1><script> zdd.icon.get("wrench"); </script> ZDD</h1>
 
 			<nav class="navbar">
-				<script> scriptlater.menu.get("main-menu"); </script>
+				<script> zdd.menu.get("main-menu"); </script>
 			</nav>
 
 		</div>
@@ -36,7 +36,7 @@
 			<div class="container">
 
 				<h2>Overview</h2>
-				<p>JavaScriplater is a website templating engine designed to run on free web hosts so you can easily manage your website with free web hosting such as Github Pages and Google Drive.</p>
+				<p>ZDD is a website templating engine designed to run on free web hosts so you can easily manage your website with free web hosting such as Github Pages and Google Drive.</p>
 
 			</div>
 		</div>
@@ -47,9 +47,9 @@
 
 				<h3>Instructions</h3>
 				<ol>
-					<li>Download the files from <a href="https://github.com/zachdyerdesign/scriptlater" target="_blank">https://github.com/zachdyerdesign/scriptlater</a></li>
-					<li>Go to <code>data/data.js</code> to update general, menu, and footer information.</li>
-					<li>Use the scriptlater functions inside of <code>script</code> tags anywhere in your html to add dynamic menus and more.</li>
+					<li>Download the files from <a href="https://github.com/zachdyerdesign/zdd" target="_blank">https://github.com/zachdyerdesign/zdd</a></li>
+					<li>Go to <code>modules</code> to update module data and create new modules.</li>
+					<li>Use the zdd functions inside of <code>script</code> tags anywhere in your html to add dynamic menus and more.</li>
 				</ol>
 
 			</div>
@@ -58,9 +58,9 @@
 
 				<h3>Templating Functions</h3>
 				<ol>
-					<li><code>scriptlater.getMenu(name)</code> - Use this to get use your dynamic menu stored in <code>scriptlater.data.menus</code></li>
-					<li><code>scriptlater.getFooter()</code> - Use this to display your footer information stored in <code>scriptlater.data.footer</code></li>
-					<li><code>scriptlater.getIcon(icon, size)</code> - Use this to display an icon from font awesome. Find more icons at <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">http://fortawesome.github.io/Font-Awesome/icons/</a></li>
+					<li><code>zdd.getMenu(name)</code> - Use this to get use your dynamic menu stored in <code>zdd.data.menus</code></li>
+					<li><code>zdd.getFooter()</code> - Use this to display your footer information stored in <code>zdd.data.footer</code></li>
+					<li><code>zdd.getIcon(icon, size)</code> - Use this to display an icon from font awesome. Find more icons at <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">http://fortawesome.github.io/Font-Awesome/icons/</a></li>
 				</ol>
 			</div>
 
@@ -68,9 +68,9 @@
 
 			<footer class="container">
 				<nav class="navbar">
-					<script> scriptlater.menu.get("footer-menu") </script>
+					<script> zdd.menu.get("footer-menu") </script>
 				</nav>
-				<script> scriptlater.include.get("footer") </script>
+				<script> zdd.include.get("footer") </script>
 			</footer>
 
 	</body>
